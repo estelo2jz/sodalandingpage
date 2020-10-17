@@ -12,12 +12,13 @@
       <a href="#">
         <img src="/images/logo.png"  class="logo" />
       </a>
-      <ul>
+      <div class="toggleMenu" onclick="menuToggle()"></div>
+      <ul class="navigation">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Profucts</a></li>
+        <li><a href="#">Products</a></li>
         <li><a href="#">What's New</a></li>
         <li><a href="#">Newsletter</a></li>
-        <li><a href="#">COntact</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </header>
     <div class="content">
@@ -50,6 +51,12 @@
     function changeBgColor(color) {
       const sec = document.querySelector('.sec');
       sec.style.background = color;
+    }
+    function menuToggle() {
+      const toggleMenu = document.querySelector('.toggleMenu');
+      const navigation = document.querySelector('.navigation');
+      toggleMenu.classList.toggle('active');
+      navigation.classList.toggle('active');
     }
   </script>
 </body>
