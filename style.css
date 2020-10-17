@@ -226,5 +226,37 @@ header ul li a {
   .content .textBox {
     position: relative;
     max-width: 100%;
+    padding-right: 10px;
+  }
+  .content .textBox h2 {
+    font-size: 3em;
+  }
+  .content .textBox a {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+  .content .imgBox {
+    width: 100%;
+    display: flex;
+    padding-right: 0;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .content .imgBox img {
+    max-width: 150px;
+  }
+  .thumb li img {
+    max-width: 30px;
+  }
+  .sci {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
